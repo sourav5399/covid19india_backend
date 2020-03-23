@@ -11,8 +11,8 @@
 	<groupId>info.corona.india</groupId>
 	<artifactId>coronaindia</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>corona19india</name>
+	<description>A project for updates on Covid-19 situation</description>
 
 	<properties>
 		<java.version>1.8</java.version>

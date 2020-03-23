@@ -23,7 +23,7 @@ public class CoronaIndiaController {
 
     @GetMapping("/getIndiaHistoricData")
     public @ResponseBody CoronaHistoricalDataDO getIndiaHistoricData(){
-        return service.getAllHistoricalDataforIndia().isPresent()?service.getAllHistoricalDataforIndia().get():new CoronaHistoricalDataDO();
+        return service.getAllHistoricalDataforIndia().orElse(new CoronaHistoricalDataDO());
     }
 
     @GetMapping("/refreshIndiaHistoricData")
