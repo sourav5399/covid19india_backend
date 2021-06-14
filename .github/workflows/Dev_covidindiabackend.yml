@@ -50,4 +50,4 @@ jobs:
         app-name: 'covidindiabackend'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_50f8b2ec51554e70a11dee50ee8c201c }}
-        package: '*.jar'
+        package: ${{ github.workspace }}/target/*.jar
