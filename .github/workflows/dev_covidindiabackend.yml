@@ -30,8 +30,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: covidindiabackend
-        slot-name: Production
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DBCFB132666348A7B9F990684692F493 }}
         package: ${{ github.workspace }}/target/*.jar
-      run: mvn spring-boot:run
 
