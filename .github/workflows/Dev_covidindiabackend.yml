@@ -27,3 +27,4 @@ jobs:
         app-name: 'covidindiabackend'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_50f8b2ec51554e70a11dee50ee8c201c }}
         package: ${{ github.workspace }}/target/*.jar
+        startup-command: java -jar *.jar
